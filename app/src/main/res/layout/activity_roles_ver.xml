@@ -1,74 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:stretchColumns="*"
-    android:padding="10dp"
-    android:background="@android:color/white">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <Button
         android:id="@+id/btn_nuevo_rol"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar rol"
-        android:textColor="@color/white"
+        android:text="Añadir rol"
         android:background="@color/Azul_previmed"
-        android:layout_marginBottom="5dp"
-        android:textStyle="bold"
-        android:layout_gravity="center" />
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
 
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
-    <!-- Encabezado -->
-    <TableRow android:background="@color/Azul_previmed">
         <TextView
-            android:layout_weight="1"
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Nombre"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:padding="8dp"
-            android:textColor="@android:color/white"/>
+            android:textSize="14dp"
+            android:textStyle="bold"/>
 
         <TextView
-            android:layout_weight="1"
-            android:text="Creación"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:padding="8dp"
-            android:textColor="@android:color/white"/>
-
-        <TextView
-            android:layout_weight="1"
-            android:text="Última Act."
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:padding="8dp"
-            android:textColor="@android:color/white"/>
-    </TableRow>
-
-    <!-- Fila de datos -->
-    <TableRow>
-        <TextView
-            android:id="@+id/nombre_rol"
-            android:layout_weight="1"
-            android:text="Nombre del Rol"
-            android:textSize="14sp"
-            android:padding="8dp"
-            android:textColor="@android:color/darker_gray"/>
-
-        <TextView
-            android:id="@+id/fecha_creacion_rol"
-            android:layout_weight="1"
+            android:id="@+id/tvFechaCreacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Fecha de Creación"
-            android:textSize="14sp"
-            android:padding="8dp"
-            android:textColor="@android:color/darker_gray"/>
+            android:textSize="12dp"/>
 
         <TextView
-            android:id="@+id/fecha_actualizacion_rol"
-            android:layout_weight="1"
+            android:id="@+id/tvFechaActualizacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Última Actualización"
-            android:textSize="14sp"
-            android:padding="8dp"
+            android:textSize="12dp"
             android:textColor="@android:color/darker_gray"/>
-    </TableRow>
-</TableLayout>
+</LinearLayout>
+
