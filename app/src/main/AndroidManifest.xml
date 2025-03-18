@@ -16,9 +16,6 @@
             android:name=".TiposDocumentoVer"
             android:exported="false" />
         <activity
-            android:name=".Tipos_documento"
-            android:exported="false" />
-        <activity
             android:name=".Roles"
             android:exported="false" />
         <activity
