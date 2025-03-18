@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forma_pagos"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forma de pago"
+        android:textSize="40dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:id="@+id/txtforma_pago"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:gravity="center"
+        android:text="Elije tu tipo de pago:"
+        android:textSize="30dp"
+        android:id="@+id/txt_tipo_pago"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical"
+        android:id="@+id/radio_group"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radio_domicilio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domicilio" />
+
+        <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Debito automatico"
+        android:id="@+id/radio_tarjeta"
+        />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convenio"
+        android:id="@+id/convenio"
+        />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nequi"
+        android:id="@+id/nequi"
+        />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Guardar"
+        android:id="@+id/btnguardar"
+        />
+
+
+
+
+
+
+
+
+
+</LinearLayout>
