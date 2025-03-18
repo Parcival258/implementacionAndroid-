@@ -1,6 +1,7 @@
 package com.andres_lasso.previmed_v01;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,18 +9,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class Roles extends AppCompatActivity {
     private int id_rol;
     public String nombre;
-    private String created;
-    private String updated;
 
     public Roles() {}
-    public Roles(int id_rol, String nombre, String created, String updated) {
+    public Roles(int id_rol, String nombre) {
         this.id_rol = id_rol;
         this.nombre = nombre;
-        this.created = created;
-        this.updated = updated;
     }
 
     public int getId_rol() {
@@ -34,19 +33,15 @@ public class Roles extends AppCompatActivity {
         this.nombre = nombre;
     }
 
-    public String getCreated() {
-        return created;
-    }
-
-    public String getUpdated() {
-        return updated;
-    }
-
+    TextInputEditText txt_nombre_rol;
+    Button btn_agregar_rol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_roles);
+        txt_nombre_rol = findViewById(R.id.txt_nombre_rol);
+        btn_agregar_rol = findViewById(R.id.btn_agregar_rol);
 
     }
 }

@@ -32,11 +32,12 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Nombre del rol"
+            android:id="@+id/txt_nombre_rol"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_agregar_rol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/Azul_previmed"
