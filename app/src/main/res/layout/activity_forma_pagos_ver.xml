@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forma_pagosVer"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btnpago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir tipo de pago"
+        android:background="@color/Azul_previmed"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/listViewpago"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:id="@+id/tvnombree"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Creación"
+            android:textSize="12dp"
+            android:id="@+id/tvfechae"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Última Actualización"
+            android:textSize="12dp"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/tvactualizae"
+            />
+</LinearLayout>

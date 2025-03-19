@@ -1,86 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Forma_pagos"
-    android:orientation="vertical"
-    android:gravity="center"
     >
-
-
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Forma de pago"
-        android:textSize="40dp"
-        android:layout_marginBottom="100dp"
-        android:gravity="center"
-        android:id="@+id/txtforma_pago"
-        />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
-        android:gravity="center"
-        android:text="Elije tu tipo de pago:"
-        android:textSize="30dp"
-        android:id="@+id/txt_tipo_pago"
-        />
-
-    <RadioGroup
+        android:id="@+id/textViewpago"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="130dp"
-        android:orientation="vertical"
-        android:id="@+id/radio_group"
-        android:gravity="center">
+        android:text="Ingresa tu nuevo tipo de pago"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="41dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
 
-        <RadioButton
-            android:id="@+id/radio_domicilio"
-            android:layout_width="match_parent"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="135dp"
+        tools:ignore="MissingConstraints"
+        android:padding="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:text="Domicilio" />
-
-        <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Debito automatico"
-        android:id="@+id/radio_tarjeta"
-        />
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Convenio"
-        android:id="@+id/convenio"
-        />
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nequi"
-        android:id="@+id/nequi"
-        />
-    </RadioGroup>
+            android:hint="Tipo de pago:"
+            android:id="@+id/txt_tipo_Pago"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/btnguardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="Aceptar"
-        android:id="@+id/btnguardar"
-
-        />
-
-
-
-
+        android:background="@color/Azul_previmed"
+        android:text="Agregar"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="320dp"
+        tools:ignore="MissingConstraints" />
 
 
 
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
