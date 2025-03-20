@@ -2,26 +2,20 @@ package com.andres_lasso.previmed_v01;
 
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.Date;
 
-public class Forma_pagos extends AppCompatActivity {
+public class FormaPagos extends AppCompatActivity {
     public int id_forma_pago;
     public String tipo_pago;
     public Date created;
     public Date updated;
 
-    public Forma_pagos(int id_forma_pago, String tipo_pago, Date created, Date updated) {
+    public FormaPagos(int id_forma_pago, String tipo_pago, Date created, Date updated) {
         this.id_forma_pago = id_forma_pago;
         this.tipo_pago = tipo_pago;
         this.created = created;
