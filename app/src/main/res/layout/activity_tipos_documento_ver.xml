@@ -15,7 +15,7 @@
         android:dividerHeight="1dp" />
 
     <Button
-        android:id="@+id/btnañadir_tipo_documento"
+        android:id="@+id/btn_add_tipo_documento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/teal_700"

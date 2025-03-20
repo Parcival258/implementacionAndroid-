@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menú Principal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btn_estado_civil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado Civil" />
+
+        <Button
+            android:id="@+id/btn_estado_civil_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Estado Civil" />
+
+        <Button
+            android:id="@+id/btn_forma_pagos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forma de Pagos" />
+
+        <Button
+            android:id="@+id/btn_forma_pagos_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Forma de Pagos" />
+
+        <Button
+            android:id="@+id/btn_roles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roles" />
+
+        <Button
+            android:id="@+id/btn_roles_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Roles" />
+
+        <Button
+            android:id="@+id/btn_tipos_documento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipos de Documento" />
+
+        <Button
+            android:id="@+id/btn_tipos_documento_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Tipos de Documento" />
+
+    </LinearLayout>
+</ScrollView>

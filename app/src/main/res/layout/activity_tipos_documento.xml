@@ -12,7 +12,7 @@
         android:id="@+id/txt_anadir_documento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingresa tu nuevo documento"
+        android:text="Ingresa nuevo tipo de documento"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"/>
