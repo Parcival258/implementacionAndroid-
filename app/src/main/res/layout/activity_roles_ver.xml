@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btn_nuevo_rol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir rol"
+        android:background="@color/Azul_previmed"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvFechaCreacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Creación"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/tvFechaActualizacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Última Actualización"
+            android:textSize="12dp"
+            android:textColor="@android:color/darker_gray"/>
+</LinearLayout>
+

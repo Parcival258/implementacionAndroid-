@@ -13,7 +13,10 @@
         android:theme="@style/Theme.Previmed_V01"
         tools:targetApi="31">
         <activity
-            android:name=".TiposDocumentoVer"
+            android:name=".Forma_pagosVer"
+            android:exported="false" />
+        <activity
+            android:name=".RolesVer"
             android:exported="false" />
         <activity
             android:name=".Roles"

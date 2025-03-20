@@ -5,14 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Roles"
+    tools:context=".Forma_pagos"
     >
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewpago"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingresa tu nuevo rol de Previmed"
+        android:text="Ingresa tu nuevo tipo de pago"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="41dp"
@@ -31,13 +30,13 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="Nombre del rol"
-            android:id="@+id/txt_nombre_rol"
+            android:hint="Tipo de pago:"
+            android:id="@+id/txt_tipo_Pago"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_agregar_rol"
+        android:id="@+id/btnguardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/Azul_previmed"
@@ -45,7 +44,10 @@
         android:textColor="@color/cardview_light_background"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="320dp" />
+        tools:layout_editor_absoluteY="320dp"
+        tools:ignore="MissingConstraints" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
