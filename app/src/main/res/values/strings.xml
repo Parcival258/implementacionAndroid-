@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Previmed_V0.1</string>
     <string name="documentosTipo">Documentos Previmed"></string>
+    <string name="nombre_del_documento">Nombre del Documento</string>
 </resources>

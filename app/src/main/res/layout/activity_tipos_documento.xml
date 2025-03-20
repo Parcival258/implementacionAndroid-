@@ -22,10 +22,11 @@
         android:id="@+id/edt_imput_nombre_documento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre del Documento"
         android:layout_marginTop="150dp"
+        android:hint="@string/nombre_del_documento"
         android:inputType="text"
-        android:textAlignment="center"/>
+        android:minHeight="48dp"
+        android:textAlignment="center" />
 
 
     <Button

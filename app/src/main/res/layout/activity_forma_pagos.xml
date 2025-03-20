@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:hint="Tipo de pago:"
             android:id="@+id/txt_tipo_Pago"
+            android:textSize="25dp"
             />
     </com.google.android.material.textfield.TextInputLayout>
 

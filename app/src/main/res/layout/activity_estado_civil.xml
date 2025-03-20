@@ -5,43 +5,34 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EstadoCivil"
     android:orientation="vertical"
-    android:layout_gravity="center"
-    android:gravity="center">
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".EstadoCivil">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crear estado civil"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="41dp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints" />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textEstadoCivil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="135dp"
-        tools:ignore="MissingConstraints"
-        android:padding="30dp">
+        android:layout_marginBottom="16dp"/>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:hint="Nombre del estado civil"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/textEstadoCivil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ingrese estado civil"
+        android:textSize="25dp"/>
+
+
     <Button
         android:id="@+id/btnGuardarEstadoCivil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/Azul_previmed"
+        android:backgroundTint="@color/Azul_previmed"
         android:text="Guardar"
         android:textColor="@color/cardview_light_background"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold"/>
 </LinearLayout>

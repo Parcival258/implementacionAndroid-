@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Roles"
     >
 
@@ -33,6 +34,7 @@
             android:layout_height="wrap_content"
             android:hint="Nombre del rol"
             android:id="@+id/txt_nombre_rol"
+            android:textSize="25dp"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -42,10 +44,11 @@
         android:layout_height="wrap_content"
         android:background="@color/Azul_previmed"
         android:text="Agregar"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/black"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="320dp" />
+        tools:layout_editor_absoluteY="320dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
